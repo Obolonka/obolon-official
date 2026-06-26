@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Оболонь — Мерч</title>
+
+  <link rel="icon" href="logo.png" type="image/png">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b0b0f;
+      color: white;
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    header h1 {
+      font-size: 48px;
+      letter-spacing: 3px;
+    }
+
+    header p {
+      opacity: 0.6;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .shop {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: #15151c;
+      border-radius: 16px;
+      padding: 15px;
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      border-color: rgba(255,255,255,0.2);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      opacity: 0.7;
+      margin-bottom: 10px;
+    }
+
+    .buy {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 20px;
+      color: white;
+      text-decoration: none;
+      opacity: 0.6;
+      transition: 0.3s;
+    }
+
+    .back:hover {
+      opacity: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      opacity: 0.5;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>МЕРЧ</h1>
+    <p>Официальный магазин Оболонь</p>
+    <a class="back" href="index.html">← Назад на главную</a>
+  </header>
+
+  <div class="container">
+
+    <div class="shop">
+
+      <div class="product">
+        <img src="hoodie.jpg" alt="Худи">
+        <div class="name">Худи "Оболонь"</div>
+        <div class="price">3990 ₽</div>
+        <a href="#" class="buy">Купить</a>
+      </div>
+
+      <div class="product">
+        <img src="tshirt.jpg" alt="Футболка">
+        <div class="name">Футболка "OBOLON"</div>
+        <div class="price">1990 ₽</div>
+        <a href="#" class="buy">Купить</a>
+      </div>
+
+      <div class="product">
+        <img src="poster.jpg" alt="Постер">
+        <div class="name">Постер</div>
+        <div class="price">990 ₽</div>
+        <a href="#" class="buy">Купить</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Оболонь. Мерч
+  </footer>
+
+</body>
+</html>
